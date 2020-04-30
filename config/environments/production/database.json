@@ -4,7 +4,7 @@
     "default": {
       "connector": "bookshelf",
       "settings": {
-        "client": "sqlite",
+        "client": "mongo",
         "host": "ds111390.mlab.com",
         "port": "11390",
         "database": "heroku_5x4bc9qp",

@@ -5,9 +5,9 @@
       "connector": "bookshelf",
       "settings": {
         "client": "sqlite",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 27017}",
-        "database": "${process.env.DATABASE_NAME || 'strapi'}",
+        "host": "ds111390.mlab.com",
+        "port": "11390",
+        "database": "heroku_5x4bc9qp",
         "username": "${process.env.DATABASE_USERNAME || ''}",
         "password": "${process.env.DATABASE_PASSWORD || ''}"
       },

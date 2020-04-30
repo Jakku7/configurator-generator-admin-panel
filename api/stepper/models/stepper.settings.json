@@ -10,7 +10,8 @@
   },
   "attributes": {
     "index": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "title": {
       "type": "string"
@@ -20,14 +21,16 @@
       "enum": [
         "Intro",
         "Step"
-      ]
+      ],
+      "default": "Intro"
     },
     "contentType": {
       "type": "enumeration",
       "enum": [
         "Tile",
         "ContactForm"
-      ]
+      ],
+      "default": "Tile"
     },
     "subtitle": {
       "type": "string"
@@ -36,15 +39,26 @@
       "type": "enumeration",
       "enum": [
         "default"
-      ]
+      ],
+      "default": "default"
     },
     "redirectOnClick": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true,
+      "required": true
     },
     "data": {
       "type": "component",
       "repeatable": true,
       "component": "content.data"
+    },
+    "isInfobarEnabled": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "infoBarData": {
+      "type": "text"
     }
   }
 }

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "steppers",
+  "info": {
+    "name": "step"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "index": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "component": {
+      "type": "enumeration",
+      "enum": [
+        "Intro",
+        "Step"
+      ]
+    },
+    "contentType": {
+      "type": "enumeration",
+      "enum": [
+        "Tile",
+        "ContactForm"
+      ]
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "default"
+      ]
+    },
+    "redirectOnClick": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.data"
+    }
+  }
+}

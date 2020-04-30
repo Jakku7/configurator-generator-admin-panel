@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/steppers",
+      "handler": "stepper.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/steppers/count",
+      "handler": "stepper.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/steppers/:id",
+      "handler": "stepper.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/steppers",
+      "handler": "stepper.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/steppers/:id",
+      "handler": "stepper.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/steppers/:id",
+      "handler": "stepper.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

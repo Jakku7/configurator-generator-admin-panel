@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_content_data",
+  "info": {
+    "name": "data",
+    "icon": "coins"
+  },
+  "options": {},
+  "attributes": {
+    "selectionAction": {
+      "type": "integer"
+    },
+    "index": {
+      "type": "integer"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "default"
+      ]
+    },
+    "text": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
